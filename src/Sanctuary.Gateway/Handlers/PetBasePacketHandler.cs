@@ -10,14 +10,14 @@ using Sanctuary.Packet.Common.Attributes;
 namespace Sanctuary.Gateway.Handlers;
 
 [PacketHandler]
-public static class MountBasePacketHandler
+public static class PetBasePacketHandler
 {
     private static ILogger _logger = null!;
 
     public static void ConfigureServices(IServiceProvider serviceProvider)
     {
         var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
-        _logger = loggerFactory.CreateLogger(nameof(MountBasePacketHandler));
+        _logger = loggerFactory.CreateLogger(nameof(PetBasePacketHandler));
     }
 
     public static bool HandlePacket(GatewayConnection connection, PacketReader reader)
@@ -30,8 +30,7 @@ public static class MountBasePacketHandler
 
         return opCode switch
         {
-            PacketDismountRequest.OpCode => PacketDismountRequestHandler.HandlePacketMount(connection, reader.Span),
-            PacketMountSpawn.OpCode => PacketMountSpawnHandler.HandlePacketMount(connection, reader.Span),
+            PacketPetSpawn.OpCode => PacketPetActivateHandler.HandlePacketPet(connection, reader.Span),
             _ => false
         };
     }

@@ -25,7 +25,7 @@ public static class PacketMountSpawnHandler
         _resourceManager = serviceProvider.GetRequiredService<IResourceManager>();
     }
 
-    public static bool HandlePacket(GatewayConnection connection, ReadOnlySpan<byte> data)
+    public static bool HandlePacketMount(GatewayConnection connection, ReadOnlySpan<byte> data)
     {
         if (!PacketMountSpawn.TryDeserialize(data, out var packet))
         {

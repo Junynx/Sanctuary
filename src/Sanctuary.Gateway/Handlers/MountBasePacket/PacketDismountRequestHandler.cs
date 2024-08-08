@@ -20,7 +20,7 @@ public static class PacketDismountRequestHandler
         _logger = loggerFactory.CreateLogger(nameof(PacketDismountRequestHandler));
     }
 
-    public static bool HandlePacket(GatewayConnection connection, ReadOnlySpan<byte> data)
+    public static bool HandlePacketMount(GatewayConnection connection, ReadOnlySpan<byte> data)
     {
         if (!PacketDismountRequest.TryDeserialize(data, out var packet))
         {
@@ -47,7 +47,7 @@ public static class PacketDismountRequestHandler
             visibleEntity.Value.OnEntityRemove(connection.Player.Mount);
         }
 
-        connection.Player.Mount = null;
+        connection.Player.Mount.Dispose();
 
         connection.Player.UpdateCharacterStats(
             CharacterStats.MaxMovementSpeed.Set(8f),

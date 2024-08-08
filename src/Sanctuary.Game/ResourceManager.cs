@@ -49,6 +49,7 @@ public class ResourceManager : IResourceManager
 
     public ZoneDefinitionCollection Zones { get; }
     public MountDefinitionCollection Mounts { get; }
+    public PetDefinitionCollection Pets { get; }
     public PlayerTitleCollection PlayerTitles { get; }
     public ProfileDefinitionCollection Profiles { get; }
     public QuickChatDefinitionCollection QuickChats { get; }

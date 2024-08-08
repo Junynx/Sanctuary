@@ -7,6 +7,7 @@ using Sanctuary.Game;
 using Sanctuary.Packet;
 using Sanctuary.Game.Entities;
 using Sanctuary.Packet.Common.Attributes;
+using Sanctuary.Packet.Common;
 
 namespace Sanctuary.Gateway.Handlers;
 
@@ -35,7 +36,7 @@ public static class WallOfDataUIEventPacketHandler
         _logger.LogTrace("Received {name} packet. ( {packet} )", nameof(WallOfDataUIEventPacket), packet);
 
         // TEST: NPC Commands
-        /* if (packet.Callback == "sendChatMessage" && !string.IsNullOrEmpty(packet.Param) && packet.Param.StartsWith("/"))
+        if (packet.Callback == "sendChatMessage" && !string.IsNullOrEmpty(packet.Param) && packet.Param.StartsWith("/"))
         {
             var commandArgs = packet.Param.Split(' ');
 
@@ -48,7 +49,7 @@ public static class WallOfDataUIEventPacketHandler
                     OnNpcCommand(connection, commandArgs);
                     break;
             }
-        } */
+        }
 
         // TEST: Teleport all zone players to you
         /* if (packet.Callback == "sendChatMessage" && packet.Param == "/teleporttome")
@@ -171,7 +172,7 @@ public static class WallOfDataUIEventPacketHandler
         } */
 
         // TEST: Change your speed
-        /* if (packet.Callback == "sendChatMessage" && !string.IsNullOrEmpty(packet.Param) && packet.Param.StartsWith("/speed"))
+        if (packet.Callback == "sendChatMessage" && !string.IsNullOrEmpty(packet.Param) && packet.Param.StartsWith("/speed"))
         {
             var args = packet.Param.Split(' ');
 
@@ -181,7 +182,7 @@ public static class WallOfDataUIEventPacketHandler
                 maxMovementSpeed = speed;
 
             connection.Player.UpdateCharacterStats(CharacterStats.MaxMovementSpeed.Set(maxMovementSpeed));
-        } */
+        }
 
         // TEST: Play a Composite Effect
         /* if (packet.Callback == "sendChatMessage" && !string.IsNullOrEmpty(packet.Param) && packet.Param.StartsWith("/ce"))
@@ -2315,13 +2316,13 @@ public static class WallOfDataUIEventPacketHandler
                         for (var z = 0; z < 61; z++)
                         {
                             // if (test > 70)
-                                // return;
+                            // return;
 
                             if (!_resourceManager.Models.TryGetValue(modelId++, out var model))
                                 continue;
 
                             // if (!model.ModelFileName.Contains("human"))
-                                // continue;
+                            // continue;
 
                             if (connection.Player.Zone.TryCreateNpc(out var npc))
                             {

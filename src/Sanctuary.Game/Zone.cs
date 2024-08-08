@@ -82,6 +82,16 @@ public sealed class Zone : IZone, IDisposable
         return _entities.TryAdd(mount.Guid, mount);
     }
 
+    public bool TryCreatePet(Player player, PetDefinition petDefinition, [MaybeNullWhen(false)] out Pet pet)
+    {
+        pet = new Pet(player, petDefinition)
+        {
+            Zone = this
+        };
+
+        return _entities.TryAdd(pet.Guid, pet);
+    }
+
     public bool TryCreatePlayer(ulong guid, UdpConnection connection, [MaybeNullWhen(false)] out Player player)
     {
         player = null;

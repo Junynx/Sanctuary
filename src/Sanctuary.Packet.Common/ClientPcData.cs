@@ -346,6 +346,7 @@ public class ClientPcData
     public ulong ActivePetGuid;
 
     public List<PacketMountInfo> Mounts = new();
+    public List<PacketPetInfo> Pets = new();
 
     public Dictionary<int, ClientActionBar> ActionBars = new();
 

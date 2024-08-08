@@ -44,6 +44,7 @@ public class DbCharacter
     public ICollection<DbItem> Items { get; set; } = new HashSet<DbItem>();
     public ICollection<DbTitle> Titles { get; set; } = new HashSet<DbTitle>();
     public ICollection<DbMount> Mounts { get; set; } = new HashSet<DbMount>();
+    public ICollection<DbPet> Pets { get; set; } = new HashSet<DbPet>();
     public ICollection<DbProfile> Profiles { get; set; } = new HashSet<DbProfile>();
 
     public ulong UserGuid { get; set; }

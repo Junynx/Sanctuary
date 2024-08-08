@@ -248,6 +248,20 @@ public class GatewayConnection : UdpConnection
             });
         }
 
+        foreach (var dbPet in dbCharacter.Pets)
+        {
+            if (!_resourceManager.Mounts.TryGetValue(dbPet.Id, out var petDefinition))
+                continue;
+
+            Player.Pets.Add(new PacketPetInfo
+            {
+                petId = petDefinition.Id,
+                PetName = petDefinition.NameId,
+                TintID = petDefinition.TintId,
+                TextureAlias = petDefinition.TintAlias,
+            });
+        }
+
         // TODO
 
         // Start - Store on DB

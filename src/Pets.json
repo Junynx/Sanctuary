@@ -1,0 +1,190 @@
+{
+  "PetId": 2,
+  "Unknown2": true,
+  "Unknown3": 652,
+  "Food": 53.0,
+  "Groom": 82.37982,
+  "Exercise": 0.0,
+  "Happiness": 2.909777,
+  "Unknown8": false,
+  "PetTricks": [
+    {
+      "Item1": 17,
+      "Item2": {
+        "Unknown": 17,
+        "Unknown2": 7532,
+        "Unknown3": 22714,
+        "Unknown4": 1,
+        "Unknown5": 0,
+        "Unknown6": 0,
+        "Unknown7": 0,
+        "Unknown8": 1,
+        "Unknown9": true
+      }
+    },
+    {
+      "Item1": 16,
+      "Item2": {
+        "Unknown": 16,
+        "Unknown2": 7520,
+        "Unknown3": 22713,
+        "Unknown4": 1,
+        "Unknown5": 0,
+        "Unknown6": 0,
+        "Unknown7": 0,
+        "Unknown8": 5,
+        "Unknown9": true
+      }
+    },
+    {
+      "Item1": 15,
+      "Item2": {
+        "Unknown": 15,
+        "Unknown2": 7523,
+        "Unknown3": 6518,
+        "Unknown4": 1,
+        "Unknown5": 0,
+        "Unknown6": 0,
+        "Unknown7": 0,
+        "Unknown8": 4,
+        "Unknown9": true
+      }
+    },
+    {
+      "Item1": 14,
+      "Item2": {
+        "Unknown": 14,
+        "Unknown2": 7517,
+        "Unknown3": 7210,
+        "Unknown4": 1,
+        "Unknown5": 0,
+        "Unknown6": 0,
+        "Unknown7": 0,
+        "Unknown8": 6,
+        "Unknown9": true
+      }
+    },
+    {
+      "Item1": 13,
+      "Item2": {
+        "Unknown": 13,
+        "Unknown2": 7514,
+        "Unknown3": 60,
+        "Unknown4": 1,
+        "Unknown5": 0,
+        "Unknown6": 0,
+        "Unknown7": 0,
+        "Unknown8": 7,
+        "Unknown9": true
+      }
+    },
+    {
+      "Item1": 12,
+      "Item2": {
+        "Unknown": 12,
+        "Unknown2": 7526,
+        "Unknown3": 61,
+        "Unknown4": 1,
+        "Unknown5": 0,
+        "Unknown6": 0,
+        "Unknown7": 0,
+        "Unknown8": 3,
+        "Unknown9": true
+      }
+    },
+    {
+      "Item1": 11,
+      "Item2": {
+        "Unknown": 11,
+        "Unknown2": 7529,
+        "Unknown3": 62,
+        "Unknown4": 1,
+        "Unknown5": 0,
+        "Unknown6": 0,
+        "Unknown7": 0,
+        "Unknown8": 2,
+        "Unknown9": true
+      }
+    }
+  ],
+  "ItemGuids": [
+    {
+      "Unknown": 0
+    },
+    {
+      "Unknown": 0
+    },
+    {
+      "Unknown": 0
+    },
+    {
+      "Unknown": 0
+    },
+    {
+      "Unknown": 0
+    }
+  ],
+  "ProfileItems": [
+    {
+      "Item1": 31,
+      "Item2": {
+        "Unknown": 31,
+        "Unknown2": 5
+      }
+    },
+    {
+      "Item1": 73,
+      "Item2": {
+        "Unknown": 73,
+        "Unknown2": 3
+      }
+    },
+    {
+      "Item1": 144,
+      "Item2": {
+        "Unknown": 144,
+        "Unknown2": 0
+      }
+    },
+    {
+      "Item1": 145,
+      "Item2": {
+        "Unknown": 145,
+        "Unknown2": 0
+      }
+    },
+    {
+      "Item1": 146,
+      "Item2": {
+        "Unknown": 146,
+        "Unknown2": 0
+      }
+    }
+  ],
+  "PetName": "Captain Zeus",
+  "Unknown10": 103980,
+  "TintID": 0,
+  "TextureAlias": "lightmark-chocolate",
+  "IconId": 3211,
+  "Unknown14": false,
+  "Unknown15": 0,
+  "Unknown16": false,
+  "Unknown17": [
+    17,
+    16,
+    15,
+    14
+  ],
+  "Unknown18": [
+    0,
+    688,
+    0,
+    0,
+    352,
+    354,
+    129,
+    0
+  ],
+  "PetItemDefinitionID": 23930,
+  "PetModelID": 364
+}
